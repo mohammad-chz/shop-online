@@ -1,0 +1,39 @@
+.new-collections{
+    margin-top: 20px;
+    padding: 10px;
+}
+.new-collections h1 {
+    text-align: center;
+}
+
+.new-collections hr {
+    width: 10%;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+.new-collections button{
+    background-color: rgb(207, 55, 38);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.new-collections button:active{
+    opacity: 0.7;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .new-collections{
+        margin-top: 200px;
+    }
+    .product{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

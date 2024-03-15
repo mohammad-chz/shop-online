@@ -1,6 +1,20 @@
+@font-face {
+  font-family: "vazir";
+  src: url(./fonts/Vazirmatn-Regular.ttf) format("truetype"),
+    url(./fonts/Vazirmatn-Black.ttf) format("truetype"),
+    url(./fonts/Vazirmatn-Bold.ttf) format("truetype"),
+    url(./fonts/Vazirmatn-ExtraBold.ttf) format("truetype"),
+    url(./fonts/Vazirmatn-Light.ttf) format("truetype"),
+    url(./fonts/Vazirmatn-Medium.ttf) format("truetype"),
+    url(./fonts/Vazirmatn-SemiBold.ttf) format("truetype"),
+    url(./fonts/Vazirmatn-Thin.ttf) format("truetype"),
+
+}
+
 body {
+  direction: rtl;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, "vazir", 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

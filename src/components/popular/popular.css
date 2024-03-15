@@ -1,0 +1,85 @@
+.popular{
+    position: relative;
+}
+.popular h1 {
+    text-align: center;
+}
+.custom-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.custom-hr {
+    width: 10%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 20px auto;
+}
+.left-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    background-color: rgb(207, 55, 38); 
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.left-button:active{
+    opacity: 0.7;
+}
+
+.right-button {
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    background-color: rgb(207, 55, 38); 
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.right-button:active{
+    opacity: 0.7;
+}
+
+.popular .left{
+    position: absolute;
+    left: 0px;
+    background-color: rgb(207, 55, 38);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.popular .right{
+    right: 0px;
+    background-color: rgb(207, 55, 38);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.popular .right:hover,.left:hover{
+    font-size: 16px;
+    transition: 0.5;
+}
+.popular .right:active, .left:active{
+    opacity: 0.7;
+}
+@media only screen and (max-width: 768px) {
+    .popular {
+        display: flex;
+        flex-direction: column;
+    }
+    .popular .right,.left{
+        display: none;
+    }
+}
